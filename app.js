@@ -36,7 +36,7 @@ bot.on('message', (msg) => {
 function main(msg) {
     if (msg.text) {
         if (msg.text=="/start") {
-            bot.sendMessage(msg.from.id,`<b>👏欢迎使用机器人</b>`,{
+            bot.sendMessage(msg.from.id,`<b>👏欢迎使用机器人联系我们！您直接发消息给机器人，我就可以收到了！</b>`,{
                 parse_mode:"HTML"
             })
         }else if(msg.text.search("/send")==0 && msg.chat.id==conf.adminid){
